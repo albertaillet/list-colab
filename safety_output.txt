@@ -1,0 +1,240 @@
+
+
+[33m[1m+===========================================================================================================================================================================================+[0m
+
+
+[31m[1mDEPRECATED: [0m[33m[1mthis command (`check`) has been DEPRECATED, and will be unsupported beyond 01 June 2024.[0m
+
+
+[32mWe highly encourage switching to the new [0m[32m[1m`scan`[0m[32m command which is easier to use, more powerful, and can be set up to mimic the deprecated command if required.[0m
+
+
+[33m[1m+===========================================================================================================================================================================================+[0m
+
+
++==============================================================================+
+
+                               /$$$$$$            /$$
+                              /$$__  $$          | $$
+           /$$$$$$$  /$$$$$$ | $$  \__//$$$$$$  /$$$$$$   /$$   /$$
+          /$$_____/ |____  $$| $$$$   /$$__  $$|_  $$_/  | $$  | $$
+         |  $$$$$$   /$$$$$$$| $$_/  | $$$$$$$$  | $$    | $$  | $$
+          \____  $$ /$$__  $$| $$    | $$_____/  | $$ /$$| $$  | $$
+          /$$$$$$$/|  $$$$$$$| $$    |  $$$$$$$  |  $$$$/|  $$$$$$$
+         |_______/  \_______/|__/     \_______/   \___/   \____  $$
+                                                          /$$  | $$
+                                                         |  $$$$$$/
+  by safetycli.com                                        \______/
+
++==============================================================================+
+
+ [1mANNOUNCEMENTS[0m 
+
+[33m  * Warning: cudf-cu12, en-core-web-sm, google-colab, jupyter-kernel-gateway,[0m 
+[33m    libcudf-cu12, nx-cugraph-cu12 and pylibcudf-cu12 are unpinned. Safety by[0m 
+[33m    default does not report on potential vulnerabilities in unpinned packages.[0m 
+[33m    It is recommended to pin your dependencies unless this is a library meant[0m 
+[33m    for distribution. To learn more about reporting these, specifier range[0m 
+[33m    handling, and options for scanning unpinned packages visit[0m 
+[33m    https://docs.pyup.io/docs/safety-range-specs[0m 
+
++==============================================================================+
+
+ [1mREPORT[0m 
+
+  Safety [1mv3.7.0[0m is scanning for [1mVulnerabilities[0m[1m...[0m
+[1m  Scanning dependencies[0m in your [1mfiles:[0m
+
+  -> requirements.txt
+
+  Using [1mopen-source vulnerability database[0m
+[1m  Found and scanned 705 packages[0m
+  Timestamp [1m2025-11-26 11:44:22[0m
+[1m  13[0m[1m vulnerabilities reported[0m
+[1m  0[0m[1m vulnerabilities ignored[0m
+
++==============================================================================+
+ [1mVULNERABILITIES REPORTED[0m 
++==============================================================================+
+
+[31m-> Vulnerability found in setuptools version 75.2.0[0m
+[1m   Vulnerability ID: [0m76752
+[1m   Affected spec: [0m<78.1.1
+[1m   ADVISORY: [0mAffected versions of Setuptools are vulnerable to Path
+   Traversal via PackageIndex.download(). The impact is Arbitrary File...
+[1m   CVE-2025-47273[0m
+[1m   For more information about this vulnerability, visit
+   [0mhttps://data.safetycli.com/v/76752/97c[0m
+   To ignore this vulnerability, use PyUp vulnerability id 76752 in safety’s
+   ignore command-line argument or add the ignore to your safety policy file.
+
+
+[31m-> Vulnerability found in python-apt version 0.0.0[0m
+[1m   Vulnerability ID: [0m62666
+[1m   Affected spec: [0m<=0.7.8
+[1m   ADVISORY: [0mPython-apt up to and including version 0.7.8 is
+   vulnerable to CVE-2019-15796: Python-apt doesn't check if hashes are...
+[1m   CVE-2019-15795[0m
+[1m   For more information about this vulnerability, visit
+   [0mhttps://data.safetycli.com/v/62666/97c[0m
+   To ignore this vulnerability, use PyUp vulnerability id 62666 in safety’s
+   ignore command-line argument or add the ignore to your safety policy file.
+
+
+[31m-> Vulnerability found in python-apt version 0.0.0[0m
+[1m   Vulnerability ID: [0m38109
+[1m   Affected spec: [0m<=0.7.8
+[1m   ADVISORY: [0mPython-apt up to and including version 0.7.8 is
+   vulnerable to CVE-2019-15796: Python-apt doesn't check if hashes are...
+[1m   CVE-2019-15796[0m
+[1m   For more information about this vulnerability, visit
+   [0mhttps://data.safetycli.com/v/38109/97c[0m
+   To ignore this vulnerability, use PyUp vulnerability id 38109 in safety’s
+   ignore command-line argument or add the ignore to your safety policy file.
+
+
+[31m-> Vulnerability found in keras version 3.10.0[0m
+[1m   Vulnerability ID: [0m79757
+[1m   Affected spec: [0m>=3.0.0,<3.11.3
+[1m   ADVISORY: [0mAffected versions of the Keras package are vulnerable to
+   Remote Code Execution due to improper handling of the safe_mode...
+[1m   CVE-2025-9905[0m
+[1m   For more information about this vulnerability, visit
+   [0mhttps://data.safetycli.com/v/79757/97c[0m
+   To ignore this vulnerability, use PyUp vulnerability id 79757 in safety’s
+   ignore command-line argument or add the ignore to your safety policy file.
+
+
+[31m-> Vulnerability found in keras version 3.10.0[0m
+[1m   Vulnerability ID: [0m79758
+[1m   Affected spec: [0m<3.11.0
+[1m   ADVISORY: [0mAffected versions of the Keras package are vulnerable to
+   Deserialization of Untrusted Data due to improper enforcement of safe...
+[1m   CVE-2025-9906[0m
+[1m   For more information about this vulnerability, visit
+   [0mhttps://data.safetycli.com/v/79758/97c[0m
+   To ignore this vulnerability, use PyUp vulnerability id 79758 in safety’s
+   ignore command-line argument or add the ignore to your safety policy file.
+
+
+[31m-> Vulnerability found in keras version 3.10.0[0m
+[1m   Vulnerability ID: [0m78701
+[1m   Affected spec: [0m>=3.0.0,<3.11.0
+[1m   ADVISORY: [0mAffected versions of the keras package are vulnerable to
+   Deserialization of Untrusted Data due to insufficient enforcement of...
+[1m   CVE-2025-8747[0m
+[1m   For more information about this vulnerability, visit
+   [0mhttps://data.safetycli.com/v/78701/97c[0m
+   To ignore this vulnerability, use PyUp vulnerability id 78701 in safety’s
+   ignore command-line argument or add the ignore to your safety policy file.
+
+
+[31m-> Vulnerability found in jupyter-server version 2.14.0[0m
+[1m   Vulnerability ID: [0m71628
+[1m   Affected spec: [0m<2.14.1
+[1m   ADVISORY: [0mJupyter Server on Windows has a vulnerability that lets
+   unauthenticated attackers leak the NTLMv2 password hash of the Windows...
+[1m   CVE-2024-35178[0m
+[1m   For more information about this vulnerability, visit
+   [0mhttps://data.safetycli.com/v/71628/97c[0m
+   To ignore this vulnerability, use PyUp vulnerability id 71628 in safety’s
+   ignore command-line argument or add the ignore to your safety policy file.
+
+
+[31m-> Vulnerability found in ipywidgets version 7.7.1[0m
+[1m   Vulnerability ID: [0m50664
+[1m   Affected spec: [0m<8.0.0
+[1m   ADVISORY: [0mIpywidgets 8.0.0 sanitizes descriptions by
+   default.https://github.com/jupyter-widgets/ipywidgets/pull/2785
+[1m   PVE-2022-50664[0m
+[1m   For more information about this vulnerability, visit
+   [0mhttps://data.safetycli.com/v/50664/97c[0m
+   To ignore this vulnerability, use PyUp vulnerability id 50664 in safety’s
+   ignore command-line argument or add the ignore to your safety policy file.
+
+
+[31m-> Vulnerability found in ipywidgets version 7.7.1[0m
+[1m   Vulnerability ID: [0m50463
+[1m   Affected spec: [0m<8.0.0rc2
+[1m   ADVISORY: [0mIpywidgets 8.0.0rc2 makes descriptions plaintext by
+   default for security.https://github.com/jupyter-...
+[1m   PVE-2022-50463[0m
+[1m   For more information about this vulnerability, visit
+   [0mhttps://data.safetycli.com/v/50463/97c[0m
+   To ignore this vulnerability, use PyUp vulnerability id 50463 in safety’s
+   ignore command-line argument or add the ignore to your safety policy file.
+
+
+[31m-> Vulnerability found in ipython version 7.34.0[0m
+[1m   Vulnerability ID: [0m53269
+[1m   Affected spec: [0m<8.10.0
+[1m   ADVISORY: [0mIPython 8.10.0 includes a fix for CVE-2023-24816:
+   Versions prior to 8.10.0 are subject to a command injection...
+[1m   CVE-2023-24816[0m
+[1m   For more information about this vulnerability, visit
+   [0mhttps://data.safetycli.com/v/53269/97c[0m
+   To ignore this vulnerability, use PyUp vulnerability id 53269 in safety’s
+   ignore command-line argument or add the ignore to your safety policy file.
+
+
+[31m-> Vulnerability found in gradio version 5.49.1[0m
+[1m   Vulnerability ID: [0m72086
+[1m   Affected spec: [0m>=0
+[1m   ADVISORY: [0m*Disputed* Affected versions of Gradio contain a code
+   injection vulnerability via the component /gradio/component_meta.py....
+[1m   CVE-2024-39236[0m
+[1m   For more information about this vulnerability, visit
+   [0mhttps://data.safetycli.com/v/72086/97c[0m
+   To ignore this vulnerability, use PyUp vulnerability id 72086 in safety’s
+   ignore command-line argument or add the ignore to your safety policy file.
+
+
+[31m-> Vulnerability found in gdal version 3.8.4[0m
+[1m   Vulnerability ID: [0m74054
+[1m   Affected spec: [0m<3.9.3
+[1m   ADVISORY: [0mAffected versions of GDAL's GMLAS driver are vulnerable
+   to XML Entity Expansion attacks (Billion Laughs attack). This...
+[1m   PVE-2024-74054[0m
+[1m   For more information about this vulnerability, visit
+   [0mhttps://data.safetycli.com/v/74054/97c[0m
+   To ignore this vulnerability, use PyUp vulnerability id 74054 in safety’s
+   ignore command-line argument or add the ignore to your safety policy file.
+
+
+[31m-> Vulnerability found in cryptography version 43.0.3[0m
+[1m   Vulnerability ID: [0m76170
+[1m   Affected spec: [0m>=42.0.0,<44.0.1
+[1m   ADVISORY: [0mPyca/cryptography's wheels include a statically linked
+   copy of OpenSSL. The versions of OpenSSL included in cryptography...
+[1m   CVE-2024-12797[0m
+[1m   For more information about this vulnerability, visit
+   [0mhttps://data.safetycli.com/v/76170/97c[0m
+   To ignore this vulnerability, use PyUp vulnerability id 76170 in safety’s
+   ignore command-line argument or add the ignore to your safety policy file.
+
+
++==============================================================================+
+   [32m[1mREMEDIATIONS[0m
+
+  13 vulnerabilities were reported in 9 packages. For detailed remediation & 
+  fix recommendations, upgrade to a commercial license. 
+
++==============================================================================+
+
+ Scan was completed. 13 vulnerabilities were reported. 
+
++==============================================================================+[0m
+
+
+[33m[1m+===========================================================================================================================================================================================+[0m
+
+
+[31m[1mDEPRECATED: [0m[33m[1mthis command (`check`) has been DEPRECATED, and will be unsupported beyond 01 June 2024.[0m
+
+
+[32mWe highly encourage switching to the new [0m[32m[1m`scan`[0m[32m command which is easier to use, more powerful, and can be set up to mimic the deprecated command if required.[0m
+
+
+[33m[1m+===========================================================================================================================================================================================+[0m
+
+
